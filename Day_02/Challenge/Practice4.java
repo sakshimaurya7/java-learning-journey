@@ -17,7 +17,7 @@ public class Practice4 {
 
         //float PI = 3.14f;
         double PI = 3.14;
-        float circleArea = PI * r * r;
+        double circleArea = PI * r * r;
 
         System.out.println("Area of circle : " + circleArea);
     }
