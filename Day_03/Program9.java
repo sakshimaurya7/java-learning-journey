@@ -29,8 +29,13 @@ public class Program9 {
                 System.out.println("Result : " + multiply);
                 break;
             case "/" :
-                int division = num1 / num2;
-                System.out.println("Result : " + division);
+                if( num2 != 0) {
+                    int division = num1 / num2;
+                    System.out.println("Result : " + division);
+                }
+                else {
+                    System.out.println("Cannot divide by zero");
+                }
                 break;
             case "%" :
                 int remainder = num1 % num2;
