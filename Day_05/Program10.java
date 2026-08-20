@@ -9,12 +9,13 @@ public class Program10 {
             reverse = reverse * 10 + digit;
             number /= 10;
         }
-        if (originalNumber == reverse) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return originalNumber == reverse;
+        // if (originalNumber == reverse) {
+        //     return true;
+        // }
+        // else {
+        //     return false;
+        // }
     }  
     public static void main(String[] args) {
         int number = 123;
