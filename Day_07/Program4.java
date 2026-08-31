@@ -1,23 +1,23 @@
 package Day_07;
 import java.util.Scanner;
 
-//Count Constants
+//Count Consonants
 public class Program4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter String : ");
         String input = sc.nextLine();
-        String constant = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
+        String consonant = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
         int count = 0;
         for(int i = 0; i < input.length(); i++) {
-            for(int j = 0; j < constant.length(); j++) {
-                if(input.charAt(i) == constant.charAt(j)) {
+            for(int j = 0; j < consonant.length(); j++) {
+                if(input.charAt(i) == consonant.charAt(j)) {
                     count++;
                 }
             }
         }
 
-        System.out.println("Constants : " + count);
+        System.out.println("Consonants : " + count);
 
         sc.close();
     }
